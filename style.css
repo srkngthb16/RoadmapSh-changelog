@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafbfc;
+}
+
+.changelog-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
+  border: 2px solid #222;
+  position: relative;
+}
+
+.changelog-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b0b0b0;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* Timeline container and vertical line */
+.timeline {
+  position: relative;
+  margin: 0 0 2.5rem 0;
+  padding-left: 0;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 145px;
+  /* Center the line between date and content */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #222;
+  z-index: 0;
+}
+
+/* Timeline item layout */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  position: relative;
+  min-height: 32px;
+}
+
+/* Date column */
+.timeline-date {
+  min-width: 130px;
+  color: #aaa;
+  font-size: 1rem;
+  text-align: right;
+  margin-right: 0;
+  flex-shrink: 0;
+  padding-right: 15px;
+  position: relative;
+}
+
+/* Dot sits over the vertical line */
+.timeline-dot {
+  position: absolute;
+  left: 145px;
+  top: 0.35em;
+  width: 16px;
+  height: 16px;
+  background: #222;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.timeline-content {
+  font-size: 1.1rem;
+  color: #222;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.changelog-btn {
+  display: block;
+  margin: 0 auto;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+.changelog-btn:hover {
+  background: #444;
+}
+
+
